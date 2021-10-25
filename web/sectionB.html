@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Choix promotion</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+    <center><h3>Choix promotion</h3></center>
+    <br>
+
+    <br>
+    <table>
+        <tr>
+            <th class="col-lg-2 col-lg-offset-1">
+                <label>Choisir nom de la promotion : </label>
+                <select id="choosePromotionSelect">   
+                </select>    
+            </th>
+        </tr>
+        <tr>
+            <th class="col-lg-2 col-lg-offset-1">
+                <label>Numéro de la formation : </label>
+                <label id="choosePromotionNumberFormation"></label>
+            </th>
+            <th class="col-lg-2 col-lg-offset-4">
+                <label>Date de début : </label>
+                <label id="choosePromotionDateBegin"></label>
+            </th>
+            <th class="col-lg-2 col-lg-offset-8">
+                <label>Date de fin : </label>
+                <label id="choosePromotionDateEnd"></label>   
+            </th>
+            <th  class="col-lg-4 col-lg-offset-2">
+                <button id="btnChoosePromotionUpdatePromotion">Modifier promotion</button>
+            </th>
+        </tr>
+        <tr>
+            <th class="col-lg-2 col-lg-offset-4">
+                <label>Ecole : </label>
+                <label id="choosePromotionSchool"></label>
+            </th>
+            <th class="col-lg-2 col-lg-offset-8">
+                <label>Ville : </label>
+                <label id="choosePromotionCity"></label>
+            </th>
+            <th class="col-lg-2 col-lg-offset-12">
+                <label>Nombre d'élèves : </label>
+                <label id="choosePromotionNumberStudent"></label>               
+            </th>
+            <th  class="col-lg-4 col-lg-offset-2">
+                <button type="button" data-toggle="modal" data-target="#modalAddStudent" id="btnChoosePromotionAddStudent">Ajouter Etudiant</button>
+            </th>
+        </tr>
+    </table>
+    
+        <table id="tableListStudent" class="table">
+            <tr>
+                <th>Prénom</th>
+                <th>Nom</th>
+                <th>Mail</th>
+                <th>Age</th>
+                <th>N°Tel</th>
+                <th>Retards</th>
+                <th>Promotion</th>
+            </tr>
+        </table>
+    <div class="modal fade" id="modalAddStudent" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"></span></button>
+                        <h4 class="modal-title" id="myModalLabel">Ajouter un étudiant</h4>
+                    </div>
+                    <div class="modal-body">
+                        <center>
+                        <div>
+                        <label>Nom</label>
+                        <input type="text" id="studentLastname"/>
+                        </div><div>
+                        <label>Prénom</label>
+                        <input type="text" id="studentFirstname"/>
+                        </div><div>
+                        <label>Mail</label>
+                        <input type="text" id="studentMail"/>
+                        </div><div>
+                        <label>Téléphone</label>
+                        <input type="text" id="studentTelephone"/>
+                        </div><div>
+                        <label>Age</label>
+                        <input type="text" id="studentAge"/>
+                        </div><div>
+                        <label>Promotion</label>
+                        <select id="choosePromotionSelectAddStudent">
+                        </select>
+                        </div><div>
+                        <label>Image</label>
+                        <input type="file" id="studentImage"/>
+                        </div>
+                        </center>
+                    </div>
+                    <div class="modal-footer">
+                        <center>
+                        <button type="button" data-dismiss="modal">Close</button>
+                        <button type="button" id="btnConfAddStudent">Valider</button>
+                        <center>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!--<script type="text/javascript" src="JavascriptImies/JsSectionB.js">
+    </script>-->
+    <script type="text/javascript" src="JavascriptImies/JsSectionB.js"></script>
+    </body>
+</html>

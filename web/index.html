@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>ImiesProject</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/cssindex.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    </head>
+    <body> 
+        <div class="panel panel-default" id="panelheader">
+            <div class="panel-body">
+                <img src="pictures/logoimie.jpg" id="logoimie"/>
+                Vous êtes connecté en tant que :
+                <label id="firstNameUser">NULL</label>
+                <div>
+                    <label id="lastNameUser">NULL</label>
+                </div>
+                <div>
+                    <label id="userLesson">NULL</label>
+                </div>
+            </div>
+        </div>
+                <!-- Modal -->
+        <div class="modal fade" id="ModalConnectFormer" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-keyboard="false" data-backdrop="static">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                      <h4 class="modal-title" id="myModalLabel">Connexion</h4>
+                    </div>
+                    <div class="modal-body">
+                              <label for="inputEmail3" class="col-sm-2 control-label">Login</label>
+                              <div class="col-sm-10">
+                                <input type="text" class="form-control" id="inputLogin" placeholder="Nom">
+                              </div>
+                              <label for="inputPassword3" class="col-sm-2 control-label">Passsword</label>
+                              <div class="col-sm-10">
+                                <input type="password" class="form-control" id="inputPassword" placeholder="Nom">
+                                <span class="label label-danger" id="warningSpan" ></span>
+                              </div>
+                          <div class="modal-footer">
+                              <button id="btnModalConnexion" type="button" class="btn btn-primary" >Connexion</button>
+                          </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="bs-example">
+        <ul class="nav nav-tabs">
+            <li id="rowSectionA" class="active"><a data-toggle="tab" href="#sectionA">Accueil</a></li>
+            <li id="rowSectionB"><a data-toggle="tab" href="#sectionB">Choisir Promotion</a></li>
+            <li id="rowSectionC"><a data-toggle="tab" href="#sectionC">Ajouter ecf</a></li>
+            <li id="rowSectionD"><a data-toggle="tab" href="#sectionD">Ajouter formation</a></li>
+            <li id="rowSectionE"><a data-toggle="tab" href="#sectionE">Gestion du compte</a></li>
+        </ul>
+        <div class="tab-content">
+            <div id="sectionA" class="tab-pane fade in active">
+            </div>
+            <div id="sectionB" class="tab-pane fade">
+            </div>
+            <div id="sectionC" class="tab-pane fade">
+            </div>
+            <div id="sectionD" class="tab-pane fade">
+            </div>
+            <div id="sectionE" class="tab-pane fade">
+            </div>
+        </div>
+        </div>
+        
+    <footer>
+        <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="JavascriptImies/JsModalConnection.js"></script>
+        <script type="text/javascript" src="JavascriptImies/javascriptindex.js"></script>
+        
+    </footer>
+    </body>
+</html>

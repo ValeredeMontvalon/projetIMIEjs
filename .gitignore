@@ -1,0 +1,6 @@
+nbproject/*
+setup/glassfish-resources.xml
+/build/
+/dist/
+web/META-INF/context.xml
+web/WEB-INF/sun-web.xml
